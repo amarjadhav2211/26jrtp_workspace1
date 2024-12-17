@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: 09_Cloud_Config_Server
+
+# specify where we are maintaing the properties file    
+  cloud:
+    config:
+      server:
+        git:              
+          uri: https://github.com/amarjadhav2211/configuration_properties
+          clone-on-start: true    # whenever config server app. started immediately load the properties from above path
+server:
+  port: 2222 

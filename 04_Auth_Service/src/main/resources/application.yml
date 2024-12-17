@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: Auth-Service
+        
+# to make 04_Auth_Service appln. as client to Congig server appln which is running on port no:2222     
+  config:
+    import: optional:configserver:http://localhost:2222/
+  
+ 
