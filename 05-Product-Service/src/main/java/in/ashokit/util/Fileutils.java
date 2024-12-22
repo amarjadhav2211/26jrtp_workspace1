@@ -1,4 +1,4 @@
-package in.ashokit.utils;
+package in.ashokit.util;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -13,7 +13,7 @@ public class Fileutils {
 	
 	public static String saveFile(String fileName,MultipartFile file) throws Exception
 	{
-		Path uploadPath=Paths.get("uploads/user-images");  // folder where u want to upload the image file
+		Path uploadPath=Paths.get("uploads/product-images");  // folder where u want to upload the image file
 		if(!Files.exists(uploadPath))
 		{
 			Files.createDirectories(uploadPath);
